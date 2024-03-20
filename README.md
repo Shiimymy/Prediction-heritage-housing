@@ -1,58 +1,9 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Heritage Housing Prediction
 
-## Codeanywhere Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Codeanywhere Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Codeanywhere Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use. 
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In your Cloud IDE, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
 * The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
-
 |Variable|Meaning|Units|
 |:----|:----|:----|
 |1stFlrSF|First Floor square feet|334 - 4692|
@@ -80,47 +31,91 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 |YearRemodAdd|Remodel date (same as construction date if no remodelling or additions)|1950 - 2010|
 |SalePrice|Sale Price|34900 - 755000|
 
-
-
-
-
 ## Business Requirements
-As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
 
-Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
+We received a request from my friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
+Although this friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
 
-* 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
-* 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
+We agreed on two business requirements: 
 
+* BR1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
+* BR2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
+
+### CRISP-DM Workflow
+
+You can refer to the project board to be able to track the tasks: [Heritage Housing Board](https://github.com/users/Shiimymy/projects/11/views/1).
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
 
+1. Base on general knowledge, we suspect that the price of a house depend on the size of the house and the amount of work someone would need to live in it. So we are checking if features such as the size, the quality of the house and year it was built have an important positive impact on the sale price.
+ * Validation: …
+
+2. Given the dataset, we also suspect that the price of a house would correlate strongly with other different features which could be highlighted.
+ * Validation : correlation and PPS study to investigate the most relevant variables correlated to the sale price ... 
+
+3. We proposed that it is possible to predict a property's sale price with a reasonable model performance of a R2 score of at least 0.8 with the given dataset.
+ * Validation: …
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
 
+List of the business requirements:
+
+### Business requierement 1: Data Exploration and Correlation Analysis.
+* We will inspect the data related to the house report database.
+* We will conduct a correlation and PPS study study (Pearson and Spearman) to understand better how the variables are correlated to SalePrice.
+* We will visualize these variables against the SalePrice, so to summarize the insights.
+
+### Business requierement 2: Regression analysis
+* We will predict the Total SalePrice amount and set it as target for a Regression analysis.
+* We will be able to predict the SalePrice for the 4 inherited houses, as well as any other house in Ames, Iowa.
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
 
+* We want an ML model to predict the sale price for the 4 inherited houses, as well as any other house in Ames, Iowa.
+* Our ideal outcome is for the client to maximize the sales price for the inherited properties thanks to a Dashboard.
+* The model success metric are an R2 score of at least 0.75 on the train set as well as on the test set.
+* The output is defined an estimated Total SalePrice amount that the client could sell any property with a breakdown on each proprety value. If the client plan to improve the house, the client will interview to gather the input data and feed it into the App. The prediction is made on the fly (not in batches).
+* Heuristics:  Currently, there is no approach to predict the sale price.
+* The training data to fit the model comes from the [Housing Prices Date](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data). This dataset contains about 1460 house records.
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
 
+### Page 1: Project Summary
 
+This page has a Quick project summary for a clear understanding of the project. It also include: 
+* List of the Project Terms & Jargon,
+* Description of the Project Dataset,
+* Introduce the Business Requirements.
+
+### Page 2: Sales Price Study 
+
+This page answers the Business Requirement 1.
+It is listing the findings related to which features have the strongest correlation to the house sale price.
+
+### Page 3: Predication Sales tool
+
+This page answers the Business Requirement 2.
+It is displaying the 4 houses' attributes and their respective predicted sale price. It displays a message informing the summed predicted price for all 4 inherited houses. 
+The page also have interactive input widgets that allow a user to provide real-time house data to predict the sale price.
+
+### Page 4: Project Hypothesis and Validation
+
+Page indicating project 3 hypothesises and how they are validated across the project.
+
+### Page 5: ML - Predict Sale Price
+
+Technical page displaying the model performance. If an ML pipelineis deployed, display pipeline steps.
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+
 
 ## Deployment
+
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://APP_NAME.herokuapp.com/ 
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
-
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
@@ -129,27 +124,13 @@ Although your friend has an excellent understanding of property prices in her ow
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
 
+List the libraries used in the project and example(s) of how used these libraries: (check requirements.txt)
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
-
-## Acknowledgements (optional)
-* In case you would like to thank the people that provided support through this project.
-
+## Acknowledgements
