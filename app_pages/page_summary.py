@@ -9,11 +9,18 @@ def page_summary_body():
 
     st.info(
         f"**Project Terms & Jargons**\n\n"
-    )
-
-    # text based on README file - "Dataset Content" section
-    st.info(
+        f"* **Sales price** of a house refers to the current market price,\
+         in US dollars, of a house with with various attributes.\n"
+        f"* **Inherited house** is a house that the client inherited from grandparents.\n"
+        f"* **Summed price** is the total of the predicted sales prices\
+         of the four inherited houses.\n\n"
         f"**Project Dataset**\n"
+        f"* **Sales price** of a house refers to the current market price,\
+         in US dollars, of a house with with various attributes.\n"
+        f"* **Inherited house** is a house that the client inherited\
+         from grandparents.\n"
+        f"* **Summed price** is the total of the predicted sales prices\
+         of the four inherited houses.\n\n"
     )
 
     # Link to README file, so the users can have access to
