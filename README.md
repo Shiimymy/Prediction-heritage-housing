@@ -4,7 +4,7 @@ The Heritage Housing Prediction tool is a Machine Learning project that helps th
 
 ![summary_page](docs/images/summary_page.png)
 
-Project URL: [Heritage Housing Prediction]()
+Project URL: [Heritage Housing Prediction](https://heritage-housing-prediction-f1178ce60414.herokuapp.com/)
 
 ## Dataset Content
 
@@ -192,7 +192,7 @@ Technical page displaying the model performance. If an ML pipelineis deployed, d
 
 ### Heroku
 
-The App live link is: https://APP_NAME.herokuapp.com/ 
+The App live link is: https://heritage-housing-prediction-f1178ce60414.herokuapp.com/ 
 * The project was deployed to Heroku using the following steps.
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
