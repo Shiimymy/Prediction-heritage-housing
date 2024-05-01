@@ -30,7 +30,8 @@ def page_ml_predict_price_body():
     st.success(
         f"The pipeline was shaped to have at least 0.75 accuracy in predicting the sales price of a property. "
         f"This was done to answer the **Business Requirement 2**."
-        f"* The pipeline performance on train and test set is 0.87 and 0.75, respectively."
+        f"* The pipeline performance on train and test set is 0.87 and 0.75, respectively. \n "
+        f"* This confirm the Hypothesys 3."
     )
 
     st.write("##### Pipeline steps:")
