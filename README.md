@@ -96,6 +96,7 @@ This page has a Quick project summary for a clear understanding of the project. 
 
 <details>
 <summary>Quick Project Summary</summary>
+
 ![Quick Project Summary](docs/images/summary_page.png)
 </details>
 
