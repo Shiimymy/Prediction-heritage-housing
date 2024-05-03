@@ -195,10 +195,13 @@ Technical page displaying the model performance. If an ML pipelineis deployed, d
 The App live link is: https://heritage-housing-prediction-f1178ce60414.herokuapp.com/ 
 * The project was deployed to Heroku using the following steps.
 1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
+2. Install heroku CLI in the IDE workplace terminal using the command: `curl https://cli-assets.heroku.com/install.sh | sh`
+3. Log into Heroku CLI in IDE workspace terminal using the bash command: `heroku login -i` and enter user credentials.
+4. Run the command: `heroku stack:set heroku-20 -a <your-app-name>`
+5. At the Deploy tab, select GitHub as the deployment method.
+6. Select your repository name and click Search. Once it is found, click Connect.
+7. Select the branch you want to deploy, then click Deploy Branch.
+8. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
 
 
 ## Main Data Analysis and Machine Learning Libraries
