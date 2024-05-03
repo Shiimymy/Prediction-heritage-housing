@@ -205,7 +205,22 @@ Technical page displaying the model performance. If an ML pipelineis deployed, d
 
 ## Unfixed Bugs
 
-* There were no known unfixed bugs in this project.
+* There were no known unfixed bugs in this project. 
+
+## Testing 
+
+Manual Testing was conduct for this project:
+
+|Page|Test|Expected result|Passed|
+|----|----|----|---|
+|All pages|Heroku Testing|The Streamlit Dashboard is successfuly rendering|YES|
+||Sidebar bar|The menu is functional and all pages are accessible|YES|
+|Housing Prices Study|Inspect House checkbox|Display the 10 first row of the dataset|YES|
+||Dsitribution of Target Variable checkbox|Display the SalePrice distribution plot|YES|
+||Sale Price per Variable checkbox|Display the 9 plots of the correlation study|YES|
+||Heatmaps checkbox|Display the Pearson, Spearman and PPS Correlations heatmaps|YES|
+|Prediction Sales Tool|Inhreted houses predictions|Predict sales price of the four inherited houses|YES|
+||Predictor Tool|Predict the sale price of a house|YES|
 
 ## Deployment
 
