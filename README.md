@@ -52,6 +52,25 @@ We agreed on two business requirements:
 
 You can refer to the project board to be able to track the tasks: [Heritage Housing Board](https://github.com/users/Shiimymy/projects/11/views/1).
 
+#### Epics
+
+* E1: Information gathering and Data collection.
+* E2: Data Understanding.
+* E3: Data Preparation.
+* E4: Modelling and Evaluation.
+* E5: Dashboard.
+* E6: Deployment.
+
+#### User Stories
+
+* U1: As a user, I want to be able to have a summary of the project so I can understand what is its purpose.
+* U2: As a client, I want to be able to see which attributes impact the most the sale prices so I can understand the housing market in Ames, Iowa.
+* U3: As a client, I want to use plots each attributes so I can visualialise their impact on the sale prices.
+* U4: As an user, I want an interactive widgets si I can real-time house data to predict the sale price.
+* U5: As a client, I want to be able to use a tool with good performances so I can have an accurate prediction of the sale price of 4 houses.
+* U6: As an user, I want to see the hypothesises of the project so I can understand how they were validated.
+* U7: As a technical user, I want to see a technical page so I can check what is the ML performances.
+
 ## Hypothesis and how to validate?
 
 1. Base on general knowledge, we suspect that the price of a house depend on the size of the house and the amount of work someone would need to live in it. So we are checking if features such as the size, the quality of the house and year it was built have an important positive impact on the sale price.
@@ -198,7 +217,7 @@ The App live link is: https://heritage-housing-prediction-f1178ce60414.herokuapp
 2. Install heroku CLI in the IDE workplace terminal using the command: `curl https://cli-assets.heroku.com/install.sh | sh`
 3. Log into Heroku CLI in IDE workspace terminal using the bash command: `heroku login -i` and enter user credentials.
 4. Run the command: `heroku stack:set heroku-20 -a <your-app-name>`
-5. At the Deploy tab, select GitHub as the deployment method.
+5. At the Deploy tab in Heroku website, select GitHub as the deployment method.
 6. Select your repository name and click Search. Once it is found, click Connect.
 7. Select the branch you want to deploy, then click Deploy Branch.
 8. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
