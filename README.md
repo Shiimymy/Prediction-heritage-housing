@@ -237,6 +237,25 @@ The App live link is: https://heritage-housing-prediction-f1178ce60414.herokuapp
 7. Select the branch you want to deploy, then click Deploy Branch.
 8. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
 
+### Local Development
+
+1. Fork template:
+
+* Once on the [Heritage Housing Prediction](https://github.com/Shiimymy/Prediction-heritage-housing) repository, click on Fork on the top-right of the page. 
+* Rename the repository with the name of your project under Repository name
+* Click to Create Fork. 
+
+This allowed you to update the project on your own GitHub account.
+
+2. Clone project:
+
+This project can be cloned to work locally by following these steps:
+
+* Go in the [Heritage Housing Prediction](https://github.com/Shiimymy/Prediction-heritage-housing) repository,
+* Click on Code to find the URL and copy it.
+* In the Terminal write git clone and paste the url.
+* Press Enter to create the clone.
+
 
 ## Main Data Analysis and Machine Learning Libraries
 
