@@ -6,6 +6,23 @@ The Heritage Housing Prediction tool is a Machine Learning project that helps th
 
 Project URL: [Heritage Housing Prediction](https://heritage-housing-prediction-f1178ce60414.herokuapp.com/)
 
+## Table of Content
+
+1. [Dataset Content](#dataset-content)
+2. [Business Requirements](#business-requirements)
+ * [CRISP-DM Workflow](#crisp-dm-workflow)
+3. [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
+4. [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+5. [ML Business Case](#ml-business-case)
+6. [Dashboard Design](#dashboard-design)
+7. [Unfixed Bugs](#unfixed-bugs)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
+ * [Heroku](#heroku)
+ * [Local Deployment](#local-development)
+10. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+11. [Credits](#credits)
+
 ## Dataset Content
 
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
