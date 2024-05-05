@@ -10,7 +10,7 @@ Project URL: [Heritage Housing Prediction](https://heritage-housing-prediction-f
 
 1. [Dataset Content](#dataset-content)
 2. [Business Requirements](#business-requirements)
- * [CRISP-DM Workflow](#crisp-dm-workflow)
+  * [CRISP-DM Workflow](#crisp-dm-workflow)
 3. [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
 4. [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
 5. [ML Business Case](#ml-business-case)
@@ -18,8 +18,8 @@ Project URL: [Heritage Housing Prediction](https://heritage-housing-prediction-f
 7. [Unfixed Bugs](#unfixed-bugs)
 8. [Testing](#testing)
 9. [Deployment](#deployment)
- * [Heroku](#heroku)
- * [Local Deployment](#local-development)
+  * [Heroku](#heroku)
+  * [Local Development](#local-development)
 10. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
 11. [Credits](#credits)
 
